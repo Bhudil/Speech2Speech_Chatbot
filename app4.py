@@ -4,6 +4,8 @@ from elevenlabs.client import ElevenLabs
 from elevenlabs import play
 from streamlit_mic_recorder import speech_to_text
 
+ELEVENLABS_API_KEY="sk_0d2508521239c2b6f8cf8391e9166afe7d98527b325a8281"
+
 st.set_page_config(page_title="🎙️ Voice Bot", layout="wide")
 st.title("🎙️ Speech Bot")
 st.sidebar.title("Speak with LLMs")
