@@ -18,7 +18,7 @@ def synthesize_speech(text):
     Returns:
         Audio playback of the input text
     """
-    client = ElevenLabs(api_key='sk_0d2508521239c2b6f8cf8391e9166afe7d98527b325a8281')    
+    client = ElevenLabs(api_key=ELEVENLABS_API_KEY)    
     audio = client.text_to_speech.convert(
         voice_id="IKne3meq5aSn9XLyUdCD",
         output_format="mp3_44100_128",
@@ -50,7 +50,7 @@ def generate_groq_response(text, model):
     Returns:
         str: AI-generated response
     """
-    client = Groq(api_key="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")
+    client = Groq(api_key=GROQ_API_KEY)
     
     chat_completion = client.chat.completions.create(
         messages=[
