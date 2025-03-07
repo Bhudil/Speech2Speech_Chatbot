@@ -50,7 +50,7 @@ def generate_groq_response(text, model):
     Returns:
         str: AI-generated response
     """
-    client = Groq(api_key=GROQ_API_KEY)
+    client = Groq(api_key="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")
     
     chat_completion = client.chat.completions.create(
         messages=[
