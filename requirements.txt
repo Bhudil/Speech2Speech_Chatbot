@@ -2,4 +2,4 @@ elevenlabs==1.51.0
 groq==0.18.0
 streamlit==1.31.1
 streamlit_mic_recorder==0.0.4
-ffmpeg-python
+ffmpeg
